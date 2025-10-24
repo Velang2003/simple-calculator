@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <div class="display">
+                <input type="text" name="display" id="screen" disabled>
+            </div>
+            <div class="buttons">
+                <div class="row1">
+                    <button class="operator main-btn" onclick="cal('ac')">AC</button>
+                    <button class="operator" onclick="cal('del')">Del</button>
+                    <button class="operator" onclick="cal('%')">%</button>
+                    <button class="operator" onclick="cal('/')">/</button>
+                </div>
+                <div class="row2">
+                    <button onclick="cal(7)">7</button>
+                    <button onclick="cal(8)">8</button>
+                    <button onclick="cal(9)">9</button>
+                    <button class="operator" onclick="cal('*')">*</button>
+                </div>
+                <div class="row3">
+                    <button onclick="cal(4)">4</button>
+                    <button onclick="cal(5)">5</button>
+                    <button onclick="cal(6)">6</button>
+                    <button class="operator" onclick="cal('-')">-</button>
+                </div>
+                <div class="row4">
+                    <button onclick="cal(1)">1</button>
+                    <button onclick="cal(2)">2</button>
+                    <button onclick="cal(3)">3</button>
+                    <button class="operator" onclick="cal('+')">+</button>
+                </div>
+                <div class="row5">
+                    <button onclick="cal('00')">00</button>
+                    <button onclick="cal(0)">0</button>
+                    <button class="operator" onclick="cal('.')">.</button>
+                    <button class="operator main-btn" onclick="cal('=')">=</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
